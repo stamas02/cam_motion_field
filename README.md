@@ -24,5 +24,8 @@ origins, displacements = get_cam_flow(img1, img2, grid_size[0], grid_size[1])
 ```
 The above example defines a 10x10 grid and returns 100 origins and
 displacement points. Both origins and displacements are absolute coordinates!
+
 ##Example
-![test image size](data/image_anim.gif){:height="50%" width="50%"}
+
+
+<img src="https://github.com/stamas02/cam_motion_field/data/image_anim.gif" width="40"/>
