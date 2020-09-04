@@ -29,10 +29,19 @@ The above example defines a 10x10 grid and returns 100 origins and
 displacement points. Both origins and displacements are absolute coordinates!
 
 ## Example
-This gif shows two images where either the camera moved forward or some zoom effect took place
+Examples where generated using the example.py. This gif shows two images where either the camera moved forward or some zoom effect took place
 
 <img src="https://github.com/stamas02/cam_motion_field/blob/master/data/image_anim.gif" width="400"/>
 
 The resuts are:
 5x5 Grid
+
 <img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_5x5.jpg" width="400"/>
+
+10x10 Grid
+
+<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_10x10.jpg" width="400"/>
+
+20x20 Grid
+
+<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_10x10.jpg" width="400"/>
