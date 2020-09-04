@@ -28,6 +28,18 @@ origins, displacements = get_cam_flow(img1, img2, grid_size[0], grid_size[1])
 The above example defines a 10x10 grid and returns 100 origins and
 displacement points. Both origins and displacements are absolute coordinates!
 
+######  Parameters:
+    Parameters
+    ----------
+    image1 : numpy array
+        image1 a grayscale image
+    image2 : numpy array
+        image2 a grayscale image
+    n_rows : int
+        number of rows in the grid
+    n_cols : int
+        number of columns in the grid
+
 ## Example
 Examples where generated using the example.py. This gif shows two images where either the camera moved forward or some zoom effect took place
 
@@ -44,4 +56,8 @@ The resuts are:
 
 20x20 Grid
 
-<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_10x10.jpg" width="400"/>
+<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_20x20.jpg" width="400"/>
+
+
+Notice that 20x20 has many zero displacements. This happens when the grid is too fine and no good features are detected
+in the cell. 
