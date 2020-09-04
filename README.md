@@ -1,11 +1,14 @@
 #Cam_motion_field
+
 ###Description
 This package provides quick and easy way to compute camera motion field given
 two consecutive images.
+
 ### Install
 ```
 pip install cam-motion-field
 ```
+
 ###Usage
 ```python
 from cam_motion_field import get_cam_flow
@@ -28,4 +31,4 @@ displacement points. Both origins and displacements are absolute coordinates!
 ##Example
 
 
-<img src="https://github.com/stamas02/cam_motion_field/data/image_anim.gif" width="40"/>
+<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/image_anim.gif" width="400"/>
