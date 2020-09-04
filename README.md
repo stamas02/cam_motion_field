@@ -1,6 +1,6 @@
-#Cam_motion_field
+# Cam_motion_field
 
-###Description
+### Description
 This package provides quick and easy way to compute camera motion field given
 two consecutive images.
 
@@ -8,8 +8,8 @@ two consecutive images.
 ```
 pip install cam-motion-field
 ```
-
-###Usage
+ 
+### Usage
 ```python
 from cam_motion_field import get_cam_flow
 import cv2
@@ -28,7 +28,11 @@ origins, displacements = get_cam_flow(img1, img2, grid_size[0], grid_size[1])
 The above example defines a 10x10 grid and returns 100 origins and
 displacement points. Both origins and displacements are absolute coordinates!
 
-##Example
-
+## Example
+This gif shows two images where either the camera moved forward or some zoom effect took place
 
 <img src="https://github.com/stamas02/cam_motion_field/blob/master/data/image_anim.gif" width="400"/>
+
+The resuts are:
+5x5 Grid
+<img src="https://github.com/stamas02/cam_motion_field/blob/master/data/motion_filed_5x5.jpg" width="400"/>
