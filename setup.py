@@ -5,7 +5,7 @@ with open("README.md", 'r') as f:
 
 setup(
     name='cam-motion-field',
-    version='1.0',
+    version='1.1',
     description='This package provides quick and easy way to compute camera motion field given two consecutive images.',
     license="MIT",
     keywords=['video', 'optical-flow', 'camera', 'camera-motion', 'motion field'],
@@ -13,7 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Tamas Suveges',
     url='https://github.com/stamas02/cam_motion_field',
-    download_url='https://github.com/stamas02/cam_motion_field/archive/v_01.tar.gz',
+    download_url='https://github.com/stamas02/cam_motion_field/archive/v_011.tar.gz',
     author_email='stamas01@gmail.com',
     packages=['cam_motion_field'],
     install_requires=['opencv-python', 'numpy'],
