@@ -1,8 +1,16 @@
 import numpy as np
 from .optical_flow import get_displacements
+import cv2
 
+_k_params = dict(
+    winSize=(15, 15),
+    maxLevel=4,
+    criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03),
+)
 
-def get_cam_flow(image1, image2, n_rows, n_cols, k_params=None, feature_params=None):
+_feature_params = dict(maxCorners=1000000, qualityLevel=0.1, minDistance=7, blockSize=7)
+
+def get_cam_flow(image1, image2, n_rows, n_cols, k_params=_k_params, feature_params=_feature_params):
     """ Calculate an optical flow for each image block defined by grid.
 
     Parameters
