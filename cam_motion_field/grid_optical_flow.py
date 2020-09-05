@@ -29,7 +29,7 @@ def get_cam_flow(image1, image2, n_rows, n_cols, k_params=None, feature_params=N
         an 2D vector representing its average displacement.
     """
     # Get image blocks
-    origins, displacements = get_displacements(image1, image2)
+    origins, displacements = get_displacements(image1, image2, k_params, feature_params)
 
     h, w = image1.shape
     row_pixel_indexes = np.linspace(0, h, n_rows + 1, dtype=np.int)
